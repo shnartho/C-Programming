@@ -1,0 +1,31 @@
++---------------------------------O.G.A.N.I.Z.E.R---------------------------------+
+
+       ......Programming Laboratories Project [help and guidelines]......
+
+basic command                       <title> <due date> <priority> <status>
+
+--help                              Help and guidelines
+task [argument]
+task create                         Creates and registers new task
+ -p [priority]                      Priority order
+ -d [due date]                      Due date
+ -t [title]                         Title
+ -s [status]                        Status
+task ls                             Lists all the tasks
+task ls --status concluded          Lists concluded tasks
+task ls --status pending            Lists pending tasks
+task ls --order priority asc        Lists in ascending order by priority
+task ls --order priority desc       Lists in descending order by priority
+task ls --order due_date asc        Lists in ascending order by due_date
+task ls --order due_date desc       Lists in descending order by due_date
+task rm [id no.]                    Removes single task
+task rm [id no.] [id no.] ...       Removes multiple tasks
+task conclude [id no.]              Concludes single task
+task conclude [id no.] [id no.] ... Concludes multiple tasks
+task rewind [id no.]                Rewinds single task
+task rewind [id no.] [id no.] ...   Rewinds multiple tasks
+
+- title must be less than 256 characters
+- priority must be between 1 to 10
+- status must be given using "c" or "p"
+- due date must be after 1900
